@@ -7,9 +7,9 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 
-const upload = multer({ dest: 'uploads/' })
+// const upload = multer({ dest: 'uploads/' })
 
-// const upload = multer.memoryStorage();
+const upload = multer.memoryStorage();
 
 require('dotenv').config();
 
