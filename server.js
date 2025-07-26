@@ -14,6 +14,10 @@ const upload = multer({ storage });
 
 require('dotenv').config();
 
+app.get('/', (req, res) => {
+    return res.json({ message: 'Working' })
+})
+
 app.post('/send-email', upload.array('docs'), async (req, res) => {
 
     const userEmail = req.body.email
