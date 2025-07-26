@@ -9,7 +9,7 @@ app.use(cors());
 
 // const upload = multer({ dest: 'uploads/' })
 
-const storage = multer.memoryStorage();
+const upload = multer.memoryStorage();
 
 require('dotenv').config();
 
